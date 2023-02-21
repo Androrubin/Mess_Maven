@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Mess Maven Demo</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Order</string>
+    <string name="title_notifications">Profile</string>
+
+    <string-array name="hostel">
+        <item>BH 1</item>
+        <item>BH 2</item>
+        <item>BH 3</item>
+        <item>BH 4</item>
+        <item>BH 5</item>
+        <item>BH 6</item>
+        <item>MBH A</item>
+        <item>MBH B</item>
+        <item>MBH F</item>
+        <item>GH 1</item>
+        <item>GH 2</item>
+        <item>E Quarters</item>
+    </string-array>
+</resources>
