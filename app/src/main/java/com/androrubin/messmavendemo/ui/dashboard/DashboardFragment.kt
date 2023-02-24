@@ -8,6 +8,9 @@ import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import com.androrubin.messmavendemo.databinding.FragmentDashboardBinding
+import com.androrubin.messmavendemo.ui.dashboard.adapters.VPAdapter
+import com.androrubin.messmavendemo.ui.dashboard.fragments.OrderExtra
+import com.androrubin.messmavendemo.ui.dashboard.fragments.QrScan
 
 class DashboardFragment : Fragment() {
 
@@ -28,10 +31,21 @@ class DashboardFragment : Fragment() {
         _binding = FragmentDashboardBinding.inflate(inflater, container, false)
         val root: View = binding.root
 
-        val textView: TextView = binding.textDashboard
-        dashboardViewModel.text.observe(viewLifecycleOwner) {
-            textView.text = it
-        }
+//        val textView: TextView = binding.textDashboard
+//        dashboardViewModel.text.observe(viewLifecycleOwner) {
+//            textView.text = it
+//        }
+        val tabLayout = binding.tabLayout
+        val viewpager = binding.viewPager
+
+        tabLayout?.setupWithViewPager(viewpager)
+
+        val vpAdapter= VPAdapter(childFragmentManager)
+        vpAdapter.addFragment(OrderExtra(),"Select Extra")
+        vpAdapter.addFragment(QrScan(),"Scan QR")
+        viewpager?.adapter = vpAdapter
+        viewpager?.setSwipePagingEnabled(true)
+
         return root
     }
 
