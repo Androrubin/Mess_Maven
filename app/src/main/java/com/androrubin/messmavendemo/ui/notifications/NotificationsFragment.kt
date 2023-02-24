@@ -7,11 +7,14 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.core.app.ActivityCompat.finishAffinity
+import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import com.androrubin.messmavendemo.MainActivity
+import com.androrubin.messmavendemo.R
 import com.androrubin.messmavendemo.databinding.FragmentNotificationsBinding
 import com.androrubin.messmavendemo.on_boarding.LoginActivity
+import com.github.anastr.speedviewlib.Gauge
 import com.google.firebase.auth.FirebaseAuth
 
 class NotificationsFragment : Fragment() {
@@ -35,10 +38,26 @@ class NotificationsFragment : Fragment() {
         _binding = FragmentNotificationsBinding.inflate(inflater, container, false)
         val root: View = binding.root
 
-        val textView: TextView = binding.textNotifications
-        notificationsViewModel.text.observe(viewLifecycleOwner) {
-            textView.text = it
-        }
+
+        val tubeSpeedometer = binding.tubeSpeedometer
+
+// change MAX speed to 320
+        tubeSpeedometer.maxSpeed = 320f
+// change speed to 140 Km/h
+        tubeSpeedometer.speedTo(140f)
+        tubeSpeedometer.withTremble=false
+        tubeSpeedometer.speedTextColor = getActivity()?.getResources()!!.getColor(android.R.color.white, getActivity()?.getTheme())
+        tubeSpeedometer.speedTextSize = 0f
+
+        val tubeSpeedometer2 = binding.tubeSpeedometer2
+
+// change MAX speed to 320
+        tubeSpeedometer2.maxSpeed = 320f
+// change speed to 240 Km/h
+        tubeSpeedometer2.speedTo(240f)
+        tubeSpeedometer2.withTremble=false
+        tubeSpeedometer2.speedTextColor = getActivity()?.getResources()!!.getColor(android.R.color.white, getActivity()?.getTheme())
+        tubeSpeedometer2.speedTextSize = 0f
 
         binding.button.setOnClickListener {
             mAuth.signOut()

@@ -7,7 +7,11 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
+import com.androrubin.messmavendemo.R
 import com.androrubin.messmavendemo.databinding.FragmentHomeBinding
+import com.androrubin.messmavendemo.ui.dashboard.adapters.VPAdapter
+import com.androrubin.messmavendemo.ui.dashboard.fragments.OrderExtra
+import com.androrubin.messmavendemo.ui.dashboard.fragments.QrScan
 
 class HomeFragment : Fragment() {
 
@@ -28,10 +32,8 @@ class HomeFragment : Fragment() {
         _binding = FragmentHomeBinding.inflate(inflater, container, false)
         val root: View = binding.root
 
-        val textView: TextView = binding.textHome
-        homeViewModel.text.observe(viewLifecycleOwner) {
-            textView.text = it
-        }
+
+
         return root
     }
 
