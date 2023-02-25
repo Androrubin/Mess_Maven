@@ -10,5 +10,8 @@
     <color name="lightGrey">#989797</color>
     <color name="ThemeColour">#eea08f</color>
     <color name="cream">#F7F5EB</color>
-
+    <color name="dark_blue">#140332</color>
+    <color name="light_green">#78BC55</color>
+    <color name="orange">#F95A0B</color>
+    <color name="light_blue">#92A7E4</color>
 </resources>
