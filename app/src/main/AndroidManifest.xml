@@ -16,6 +16,8 @@
         <activity
             android:name=".on_boarding.CreateProfile"
             android:exported="false" />
+        <activity android:name=".PreviousTransaction"
+            android:exported="false"/>
         <activity
             android:name=".on_boarding.LoginActivity"
             android:exported="false" />

@@ -11,6 +11,7 @@ import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import com.androrubin.messmavendemo.MainActivity
+import com.androrubin.messmavendemo.PreviousTransaction
 import com.androrubin.messmavendemo.R
 import com.androrubin.messmavendemo.databinding.FragmentNotificationsBinding
 import com.androrubin.messmavendemo.on_boarding.LoginActivity
@@ -63,6 +64,10 @@ class NotificationsFragment : Fragment() {
             mAuth.signOut()
             startActivity(Intent(activity,LoginActivity::class.java))
             finishAffinity(MainActivity())
+        }
+
+        binding.textView4.setOnClickListener{
+            startActivity(Intent(activity,PreviousTransaction::class.java))
         }
         return root
     }
