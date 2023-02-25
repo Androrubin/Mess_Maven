@@ -9,8 +9,6 @@ import com.androrubin.messmavendemo.R
 
 
 class Announcements : Fragment() {
-
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         arguments?.let {

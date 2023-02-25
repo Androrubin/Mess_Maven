@@ -62,9 +62,10 @@
     </FrameLayout>
 
     <ScrollView
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="24dp"
+        android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/ann_lay">
@@ -72,7 +73,7 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:orientation="vertical">
 
             <FrameLayout
@@ -82,8 +83,9 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="8dp"
+                    android:layout_marginStart="16dp"
                     android:layout_marginTop="8dp"
+
                     android:elevation="16dp"
                     android:text="20/2/2023\n\nMess menu has been changed and will be in\neffect from 24/2/2023"
                     android:textColor="@color/dark_blue"
@@ -92,9 +94,9 @@
 
                 <ImageView
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_height="wrap_content"
                     android:layout_marginBottom="24dp"
-                    android:src="@drawable/rect_1234" />
+                    android:src="@drawable/group_54" />
             </FrameLayout>
 
             <FrameLayout
@@ -104,7 +106,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="8dp"
+                    android:layout_marginStart="16dp"
                     android:layout_marginTop="8dp"
                     android:elevation="16dp"
                     android:text="14/2/2023\n\nFor students fasting on the occasion of \nMahashivratri should give their names at\n
@@ -117,30 +119,30 @@ mess at least one day prior"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_marginBottom="24dp"
-                    android:src="@drawable/rect_1234" />
+                    android:src="@drawable/group_55" />
             </FrameLayout>
 
-            <FrameLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
+<!--            <FrameLayout-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content">-->
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="8dp"
-                    android:layout_marginTop="8dp"
-                    android:elevation="16dp"
-                    android:text="9/1/2023\n\nThe mess bills have been finalised .Kindly pay\nthe mess fees as soon as possible"
-                    android:textColor="@color/dark_blue"
-                    android:textSize="16dp"
-                    android:textStyle="bold" />
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginStart="8dp"-->
+<!--                    android:layout_marginTop="8dp"-->
+<!--                    android:elevation="16dp"-->
+<!--                    android:text="9/1/2023\n\nThe mess bills have been finalised .Kindly pay\nthe mess fees as soon as possible"-->
+<!--                    android:textColor="@color/dark_blue"-->
+<!--                    android:textSize="16dp"-->
+<!--                    android:textStyle="bold" />-->
 
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_marginBottom="24dp"
-                    android:src="@drawable/rect_1234" />
-            </FrameLayout>
+<!--                <ImageView-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:layout_marginBottom="24dp"-->
+<!--                    android:src="@drawable/group_58" />-->
+
 
 
 

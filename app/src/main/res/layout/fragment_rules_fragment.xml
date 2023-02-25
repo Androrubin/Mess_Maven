@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/Themelight">
+    >
+
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -14,73 +15,57 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical">
-            <ImageView
-                android:id="@+id/imageView"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:scaleType="fitXY"
-                android:src="@drawable/rectangle_16"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
 
-            <TextView
-                android:id="@+id/food_title"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
-                android:layout_marginStart="120dp"
-                android:text="\n Rules and\n Regulations "
-                android:textColor="@color/dark_blue"
-                android:textSize="32sp"
-                android:textStyle="bold"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/imageView" />
-
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/guidelines"
-                android:layout_marginStart="24dp"
-                android:layout_marginTop="25dp"/>
-
-
-            <TextView
+            <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_marginTop="160dp"
-                android:backgroundTint="@color/lightGrey"
-                android:elevation="200dp"
-                android:padding="30dp"
-                android:text="1.Please come in a queue to take plates.\n\n2.Do not rush and show your profile before taking the plate.\n\n3.Kindly arrive at mess in the given timings only , No request to give food will be entertained after mess closing."
-                android:textColor="@color/dark_blue"
-                android:textSize="24dp" />
+                android:elevation="40dp"
+                >
 
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/burgers"
-                android:layout_marginStart="250dp"
-                android:layout_marginTop="600dp"/>
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/salad"
-                android:layout_marginStart="250dp"
-                android:layout_marginTop="470dp"/>
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/sandwich"
-                android:layout_marginStart="60dp"
-                android:layout_marginTop="510dp"/>
-            <ImageView
-                android:layout_width="150dp"
-                android:layout_height="wrap_content"
-                android:src="@drawable/ramen"
-               android:layout_marginStart="40dp"
-                android:layout_marginTop="560dp"/>
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="match_parent"
+                    android:layout_height="160dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/rectangle_16"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/food_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="120dp"
+                    android:layout_marginTop="8dp"
+                    android:text="\n Rules and\n Regulations "
+                    android:textColor="@color/dark_blue"
+                    android:textSize="32sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/imageView" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="25dp"
+                    android:src="@drawable/guidelines" />
+
+                <TextView
+                    android:layout_width="300dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="160dp"
+                    android:background="@color/Themelight"
+                    android:elevation="200dp"
+                    android:padding="30dp"
+                    android:text="1.Please come in a queue to take plates.\n\n2.Do not rush and show your profile before taking the plate.\n\n3.Kindly arrive at mess in the given timings only , No request to give food will be entertained after mess closing."
+                    android:textColor="@color/dark_blue"
+                    android:textSize="24dp" />
+            </androidx.cardview.widget.CardView>
+
+
             <!--        <androidx.cardview.widget.CardView-->
             <!--            -->
             <!--            android:layout_width="wrap_content"-->
@@ -345,5 +330,30 @@
 <!--            </androidx.constraintlayout.widget.ConstraintLayout>-->
         </FrameLayout>
     </ScrollView>
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="144dp"
+        android:layout_height="117dp"
+        android:src="@drawable/ramen"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/burgers"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView4" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/sandwich"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView3" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
