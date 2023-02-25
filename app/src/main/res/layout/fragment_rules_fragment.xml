@@ -3,7 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@color/Themelight">
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -45,18 +46,17 @@
                 android:layout_marginTop="25dp"/>
 
 
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="160dp"
+                android:backgroundTint="@color/lightGrey"
+                android:elevation="200dp"
+                android:padding="30dp"
+                android:text="1.Please come in a queue to take plates.\n\n2.Do not rush and show your profile before taking the plate.\n\n3.Kindly arrive at mess in the given timings only , No request to give food will be entertained after mess closing."
+                android:textColor="@color/dark_blue"
+                android:textSize="24dp" />
 
-
-                    <TextView
-                        android:backgroundTint="@color/lightGrey"
-                        android:layout_width="match_parent"
-                        android:textSize="24dp"
-                        android:padding="30dp"
-                        android:layout_height="match_parent"
-                        android:textColor="@color/dark_blue"
-                        android:layout_marginTop="200dp"
-                        android:elevation="200dp"
-                        android:text="1.please come in a queue to take plates.\n2.Do not rush and show your profile before taking the plate.\n3.Kindly arrive at mess in the given timings only , No request to give food will be entertained after mess closing."/>
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -67,20 +67,20 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:src="@drawable/salad"
-                android:layout_marginStart="200dp"
-                android:layout_marginTop="500dp"/>
+                android:layout_marginStart="250dp"
+                android:layout_marginTop="470dp"/>
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:src="@drawable/sandwich"
-                android:layout_marginStart="50dp"
-                android:layout_marginTop="500dp"/>
+                android:layout_marginStart="60dp"
+                android:layout_marginTop="510dp"/>
             <ImageView
                 android:layout_width="150dp"
                 android:layout_height="wrap_content"
                 android:src="@drawable/ramen"
-               android:layout_marginStart="50dp"
-                android:layout_marginTop="550dp"/>
+               android:layout_marginStart="40dp"
+                android:layout_marginTop="560dp"/>
             <!--        <androidx.cardview.widget.CardView-->
             <!--            -->
             <!--            android:layout_width="wrap_content"-->
