@@ -10,7 +10,6 @@ import androidx.lifecycle.ViewModelProvider
 import com.androrubin.messmavendemo.R
 import com.androrubin.messmavendemo.databinding.FragmentHomeBinding
 import com.androrubin.messmavendemo.ui.dashboard.adapters.VPAdapter
-import com.androrubin.messmavendemo.ui.dashboard.fragments.OrderExtra
 import com.androrubin.messmavendemo.ui.dashboard.fragments.QrScan
 
 class HomeFragment : Fragment() {

@@ -9,6 +9,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import android.widget.ImageView
+import android.widget.TextView
 import android.widget.Toast
 import androidx.cardview.widget.CardView
 import com.androrubin.messmavendemo.MainActivity
@@ -24,6 +25,7 @@ class QrScan : Fragment(), EasyPermissions.PermissionCallbacks,
     EasyPermissions.RationaleCallbacks {
     var scanQr: ImageView? = null
     var btnScan: Button? = null
+    var edtCode: TextView? = null
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -35,6 +37,7 @@ class QrScan : Fragment(), EasyPermissions.PermissionCallbacks,
 
         scanQr = view?.findViewById(R.id.scanQrImg)
         btnScan = view?.findViewById(R.id.scanQrBtn)
+        edtCode = view?.findViewById(R.id.edtTxt)
 
         btnScan?.setOnClickListener {
             cameraTask()
@@ -85,7 +88,7 @@ class QrScan : Fragment(), EasyPermissions.PermissionCallbacks,
 
                     Toast.makeText(context, result.contents.toString(), Toast.LENGTH_LONG).show()
                     Log.d("QRCode",result.contents.toString())
-                    //edtCode!!.setText(result.contents.toString())
+                    edtCode!!.setText(result.contents.toString())
                 } catch (exception: JSONException) {
                     Toast.makeText(context, exception.localizedMessage, Toast.LENGTH_SHORT).show()
                     //edtCode!!.setText("")
