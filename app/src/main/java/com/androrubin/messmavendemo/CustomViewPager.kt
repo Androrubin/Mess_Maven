@@ -5,7 +5,7 @@ import android.util.AttributeSet
 import android.view.MotionEvent
 import android.view.View
 import androidx.viewpager.widget.ViewPager
-
+//Correct data
 class CustomViewPager(context: Context, attrs: AttributeSet): ViewPager(context, attrs) {
     private var swipeEnabled = false
 
