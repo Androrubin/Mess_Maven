@@ -40,16 +40,6 @@ class NotificationsFragment : Fragment() {
         val root: View = binding.root
 
 
-        val tubeSpeedometer = binding.tubeSpeedometer
-
-// change MAX speed to 320
-        tubeSpeedometer.maxSpeed = 320f
-// change speed to 140 Km/h
-        tubeSpeedometer.speedTo(140f)
-        tubeSpeedometer.withTremble=false
-        tubeSpeedometer.speedTextColor = getActivity()?.getResources()!!.getColor(android.R.color.white, getActivity()?.getTheme())
-        tubeSpeedometer.speedTextSize = 0f
-
         val tubeSpeedometer2 = binding.tubeSpeedometer2
 
 // change MAX speed to 320
@@ -60,14 +50,16 @@ class NotificationsFragment : Fragment() {
         tubeSpeedometer2.speedTextColor = getActivity()?.getResources()!!.getColor(android.R.color.white, getActivity()?.getTheme())
         tubeSpeedometer2.speedTextSize = 0f
 
-        binding.button.setOnClickListener {
+        //val logoutBtn = binding.
+        val logOutBtn = binding.logOutBtn
+        logOutBtn.setOnClickListener {
             mAuth.signOut()
             startActivity(Intent(activity,LoginActivity::class.java))
             finishAffinity(MainActivity())
         }
-
-        binding.textView4.setOnClickListener{
+        binding.prevTransCard.setOnClickListener {
             startActivity(Intent(activity,PreviousTransaction::class.java))
+            finishAffinity(MainActivity())
         }
         return root
     }

@@ -52,4 +52,13 @@
     <color name="indigo_200_b5">#b592a7e4</color>
     <color name="white_A700">#ffffff</color>
     <color name="indigo_600">#45539d</color>
+    <color name="whitish_blue">#C7CDF1</color>
+    <color name="lightPeach">#87E88C80</color>
+    <color name="lightblue">#B592A7E4</color>
+    <color name="btnviolet">#140332</color>
+    <color name="red">#ff0000</color>
+    <color name ="background_colour">#fff5e2</color>
+    <color name="lightgreen">#BD43B549</color>
+    <color name ="dark_blue">#92A7E4</color>
+    <color name ="brown">#8A6956</color>
 </resources>
