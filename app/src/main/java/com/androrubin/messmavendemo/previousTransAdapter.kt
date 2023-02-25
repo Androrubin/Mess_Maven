@@ -21,6 +21,7 @@ class previousTransAdapter(private val items:ArrayList<PreviousTransactionData>)
 
     override fun onBindViewHolder(holder: adapterHolder, position: Int) {
         val currentitem=items[position]
+        var value=0
         holder.DinnerExtra.text=currentitem.DinnerExtra
         holder.LunchExtra.text=currentitem.LunchExtra
         holder.BreakfastExtra.text=currentitem.BreakfastExtra
@@ -34,6 +35,8 @@ class previousTransAdapter(private val items:ArrayList<PreviousTransactionData>)
         } else View.GONE
 
         holder.visibility.setOnClickListener {
+            items[value].Visibility=!items[value].Visibility
+            value = position
             currentitem.Visibility = !currentitem.Visibility
             notifyItemChanged(position)
         }
