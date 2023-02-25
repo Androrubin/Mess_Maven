@@ -5,17 +5,14 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.TextView
 import androidx.core.app.ActivityCompat.finishAffinity
-import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
+import com.androrubin.messmavendemo.MessLeave
 import com.androrubin.messmavendemo.MainActivity
 import com.androrubin.messmavendemo.PreviousTransaction
-import com.androrubin.messmavendemo.R
 import com.androrubin.messmavendemo.databinding.FragmentNotificationsBinding
 import com.androrubin.messmavendemo.on_boarding.LoginActivity
-import com.github.anastr.speedviewlib.Gauge
 import com.google.firebase.auth.FirebaseAuth
 
 class NotificationsFragment : Fragment() {

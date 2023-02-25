@@ -3,7 +3,8 @@
     <string name="title_home">Home</string>
     <string name="title_dashboard">Order</string>
     <string name="title_notifications">Profile</string>
-
+    <string name="question"><u>Planning to eat out ?</u></string>
+    <string name="leave"><u>Going on leave ?</u></string>
     <string-array name="hostel">
         <item>BH 1</item>
         <item>BH 2</item>
