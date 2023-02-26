@@ -15,6 +15,12 @@
         android:theme="@style/Theme.MessMavenDemo"
         tools:targetApi="31">
         <activity
+            android:name=".calender2activity"
+            android:exported="false" />
+        <activity
+            android:name=".mess_leave_calenderActivity"
+            android:exported="false" />
+        <activity
             android:name=".ReviewActivity"
             android:exported="false" />
         <activity
