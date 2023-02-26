@@ -14,6 +14,9 @@
         android:theme="@style/Theme.MessMavenDemo"
         tools:targetApi="31">
         <activity
+            android:name=".MessLeave"
+            android:exported="false" />
+        <activity
             android:name=".on_boarding.CreateProfile"
             android:exported="false" />
         <activity android:name=".PreviousTransaction"
