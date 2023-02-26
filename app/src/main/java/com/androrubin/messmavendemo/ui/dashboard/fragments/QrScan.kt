@@ -33,8 +33,6 @@ class QrScan : Fragment(), EasyPermissions.PermissionCallbacks,
     ): View? {
         // Inflate the layout for this fragment
        val view = inflater.inflate(R.layout.fragment_qr_scan, container, false)
-
-
         scanQr = view?.findViewById(R.id.scanQrImg)
         btnScan = view?.findViewById(R.id.scanQrBtn)
         edtCode = view?.findViewById(R.id.edtTxt)
@@ -77,15 +75,12 @@ class QrScan : Fragment(), EasyPermissions.PermissionCallbacks,
 
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
 
-
         var result = IntentIntegrator.parseActivityResult(requestCode, resultCode, data)
         if (result != null) {
             if (result.contents == null) {
                 Toast.makeText(context, "Result Not Found", Toast.LENGTH_SHORT).show()
-
             } else {
                 try {
-
                     Toast.makeText(context, result.contents.toString(), Toast.LENGTH_LONG).show()
                     Log.d("QRCode",result.contents.toString())
                     edtCode!!.setText(result.contents.toString())

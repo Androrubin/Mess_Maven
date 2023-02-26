@@ -15,6 +15,7 @@ import com.androrubin.messmavendemo.PreviousTransaction
 import com.androrubin.messmavendemo.R
 import com.androrubin.messmavendemo.databinding.FragmentNotificationsBinding
 import com.androrubin.messmavendemo.on_boarding.LoginActivity
+import com.androrubin.messmavendemo.ui.home.RulesActivity
 import com.github.anastr.speedviewlib.Gauge
 import com.google.firebase.auth.FirebaseAuth
 
@@ -43,9 +44,9 @@ class NotificationsFragment : Fragment() {
         val tubeSpeedometer2 = binding.tubeSpeedometer2
 
 // change MAX speed to 320
-        tubeSpeedometer2.maxSpeed = 320f
+        tubeSpeedometer2.maxSpeed = 25000f
 // change speed to 240 Km/h
-        tubeSpeedometer2.speedTo(240f)
+        tubeSpeedometer2.speedTo(13890f)
         tubeSpeedometer2.withTremble=false
         tubeSpeedometer2.speedTextColor = getActivity()?.getResources()!!.getColor(android.R.color.white, getActivity()?.getTheme())
         tubeSpeedometer2.speedTextSize = 0f
@@ -60,6 +61,12 @@ class NotificationsFragment : Fragment() {
         binding.prevTransCard.setOnClickListener {
             startActivity(Intent(activity,PreviousTransaction::class.java))
             finishAffinity(MainActivity())
+        }
+        binding.rulescard.setOnClickListener {
+            startActivity(Intent(context,RulesActivity :: class.java))
+        }
+        binding.anyFeedbackCard.setOnClickListener {
+            startActivity(Intent(context,FeedbackActivity :: class.java))
         }
         return root
     }

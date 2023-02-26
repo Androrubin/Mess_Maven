@@ -76,6 +76,21 @@
                     app:layout_constraintEnd_toEndOf="@+id/tubeSpeedometer2"
                     app:layout_constraintStart_toStartOf="@+id/tubeSpeedometer2" />
 
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="4dp"
+                    android:background="@color/lightgreen"
+                    android:padding="4dp"
+                    android:text="₹13890"
+                    android:textColor="@color/red"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="@+id/tubeSpeedometer2"
+                    app:layout_constraintEnd_toEndOf="@+id/tubeSpeedometer2"
+                    app:layout_constraintHorizontal_bias="0.49"
+                    app:layout_constraintStart_toStartOf="@+id/tubeSpeedometer2" />
+
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -317,7 +332,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             android:backgroundTint="@color/btnviolet"
-            app:layout_constraintTop_toBottomOf="@+id/anyFeedbackCard"
+            app:layout_constraintTop_toBottomOf="@+id/rulescard"
             app:layout_constraintBottom_toBottomOf="parent">
 
             <TextView
@@ -332,6 +347,48 @@
                 android:gravity="center"
                 android:text="Logout" />
         </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/rulescard"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="40dp"
+            android:backgroundTint="@color/blue"
+            app:cardCornerRadius="10dp"
+            android:layout_marginBottom="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/anyFeedbackCard">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="90dp"
+                android:padding="6dp"
+                android:text="Must follow rules and regulations in mess"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imageView12"
+                android:layout_marginStart="170dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image7" />
+            <TextView
+                android:layout_gravity="bottom"
+                android:layout_marginStart="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/baseline_arrow_forward_24"/>
+        </androidx.cardview.widget.CardView>
+
+
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>

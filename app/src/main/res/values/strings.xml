@@ -3,6 +3,14 @@
     <string name="title_home">Home</string>
     <string name="title_dashboard">Order</string>
     <string name="title_notifications">Profile</string>
+    <string name="question"><u>Wanna skip a single meal ?</u></string>
+    <string name="leave"><u>Going for long leave?</u></string>
+
+    <string-array name="Meals">
+        <item>Breakfast</item>
+        <item>Lunch</item>
+        <item>Dinner</item>
+         </string-array>
 
     <string-array name="hostel">
         <item>BH 1</item>

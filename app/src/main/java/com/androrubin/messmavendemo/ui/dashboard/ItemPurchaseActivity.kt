@@ -24,7 +24,7 @@ class ItemPurchaseActivity : AppCompatActivity() {
 
         item_name.setText(name)
         item_price.text=price
-        Glide.with(this).load(image).into(item_image)
+       // Glide.with(this).load(image).into(item_image)
 
         val nextbtn=findViewById<Button>(R.id.btnSave)
         nextbtn.setOnClickListener {

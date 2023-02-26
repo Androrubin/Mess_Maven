@@ -15,6 +15,18 @@
         android:theme="@style/Theme.MessMavenDemo"
         tools:targetApi="31">
         <activity
+            android:name=".TakeLeaveActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.notifications.FeedbackActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.home.Announcements"
+            android:exported="false" />
+        <activity
+            android:name=".ui.home.RulesActivity"
+            android:exported="false" />
+        <activity
             android:name=".ui.dashboard.TransactionDoneActivity"
             android:exported="false" />
         <activity

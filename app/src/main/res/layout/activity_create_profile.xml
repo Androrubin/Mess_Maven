@@ -4,14 +4,25 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#fbc9bd"
+    android:background="#f5f5dc"
     tools:context=".on_boarding.CreateProfile">
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/rectangle" />
 
     <TextView
         android:id="@+id/text2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="4dp"
+        android:layout_marginTop="20dp"
         android:text="Register yourself"
         android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="@id/create_ac"
@@ -21,28 +32,28 @@
 
     <TextView
         android:id="@+id/create_ac"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="60dp"
+        android:layout_width="172dp"
+        android:layout_height="69dp"
+        android:layout_marginTop="24dp"
         android:text="Create your account"
-        android:textColor="@color/black"
+        android:textColor="@color/white"
         android:textSize="28sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.23"
+        app:layout_constraintHorizontal_bias="0.15"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/itemName"
+        android:id="@+id/name"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="36dp"
         android:layout_marginEnd="36dp"
         android:hint="Name"
-        app:boxBackgroundColor="@color/cream"
-        app:boxStrokeColor="@color/ThemeColour"
+        app:boxBackgroundColor="@color/lightblue"
+        app:boxStrokeColor="@color/lightblue"
         app:boxStrokeWidth="2dp"
         app:counterEnabled="true"
         app:counterMaxLength="30"
@@ -52,7 +63,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/text2">
+        app:layout_constraintTop_toBottomOf="@id/imageView10">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/name_text"
@@ -69,8 +80,8 @@
         android:layout_marginStart="36dp"
         android:layout_marginEnd="36dp"
         android:hint="Roll no"
-        app:boxBackgroundColor="@color/cream"
-        app:boxStrokeColor="@color/ThemeColour"
+        app:boxBackgroundColor="@color/lightblue"
+        app:boxStrokeColor="@color/lightblue"
         app:boxStrokeWidth="2dp"
         app:counterEnabled="true"
         app:counterMaxLength="30"
@@ -79,7 +90,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/itemName"
+        app:layout_constraintTop_toBottomOf="@id/name"
         tools:layout_editor_absoluteY="475dp">
 
         <com.google.android.material.textfield.TextInputEditText
@@ -94,8 +105,8 @@
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:boxStrokeColor="@color/ThemeColour"
-        app:boxBackgroundColor="@color/cream"
+        app:boxBackgroundColor="@color/lightblue"
+        app:boxStrokeColor="@color/lightblue"
         android:layout_marginStart="36dp"
         android:layout_marginEnd="36dp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -122,8 +133,8 @@
         android:layout_marginStart="36dp"
         android:layout_marginEnd="36dp"
         android:hint="Room no"
-        app:boxBackgroundColor="@color/cream"
-        app:boxStrokeColor="@color/ThemeColour"
+        app:boxBackgroundColor="@color/lightblue"
+        app:boxStrokeColor="@color/lightblue"
         app:boxStrokeWidth="2dp"
         app:counterEnabled="true"
         app:counterMaxLength="3"
@@ -151,15 +162,27 @@
         android:layout_width="278dp"
         android:layout_height="49dp"
         android:layout_marginTop="28dp"
-        android:background="@drawable/button_theme_back"
-        android:gravity="center_horizontal"
+        android:background="@drawable/btn_back"
+        android:gravity="center"
         android:text="Sign Up"
-        android:textColor="@color/black"
+        android:textColor="@color/white"
         android:textSize="22sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/PhoneNo" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="4dp"
+        app:layout_constraintBottom_toBottomOf="@+id/create_ac"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.081"
+        app:srcCompat="@drawable/gropprof" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

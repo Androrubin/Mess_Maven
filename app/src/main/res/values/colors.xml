@@ -47,6 +47,7 @@
     <color name="light_green_600_68">#6878bc54</color>
     <color name="black_900_30">#30000000</color>
     <color name="bluegray_101">#d4d3df</color>
+    <color name="Themelight">#EFC6BD</color>
     <color name="indigo_200_7f">#7f92a7e4</color>
     <color name="light_green_600_7f">#7f78bc55</color>
     <color name="indigo_200_b5">#b592a7e4</color>
@@ -59,7 +60,8 @@
     <color name="red">#ff0000</color>
     <color name ="background_colour">#fff5e2</color>
     <color name="lightgreen">#BD43B549</color>
-    <color name ="dark_blue">#92A7E4</color>
+    <color name ="dark_blue">#140332</color>
     <color name ="brown">#8A6956</color>
     <color name="lightorange">#59F95A0B</color>
+    <color name="blue">#92A7E4</color>
 </resources>

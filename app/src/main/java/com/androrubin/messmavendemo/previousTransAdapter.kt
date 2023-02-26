@@ -48,7 +48,7 @@ class adapterHolder(itemView: View) :RecyclerView.ViewHolder(itemView){
     val LunchAmt:TextView=itemView.findViewById(R.id.amtLunch)
     val BreakfastAmt:TextView=itemView.findViewById(R.id.amtBreakfast)
     val Date:TextView=itemView.findViewById(R.id.tv_date)
-    val visibility:ImageView=itemView.findViewById(R.id.visibility)
+    val visibility:ImageView=itemView.findViewById(R.id.imageView)
     val constrainLayout:ConstraintLayout=itemView.findViewById(R.id.expandedLayout)
 
 }
